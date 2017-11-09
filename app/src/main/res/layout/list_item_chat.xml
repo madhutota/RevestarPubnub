@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:id="@+id/rlChat"
+    android:background="@drawable/bg_item_list"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/chk_list"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space10"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginRight="@dimen/space10"
+        android:layout_toRightOf="@id/chk_list">
+
+        <ImageView
+            android:id="@+id/iv_user_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/userpic" />
+
+        <TextView
+            android:id="@+id/tv_chat_count"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="-1dp"
+            android:background="@drawable/bg_unread"
+            android:gravity="center"
+            android:text="300"
+            android:textColor="@android:color/white"
+            android:textSize="9sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_toRightOf="@+id/rl_photo"
+        android:background="@drawable/bg_bottom_grey"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/space10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/h2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laura Owens"
+                />
+
+            <TextView
+                android:id="@+id/tv_last_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_user_name"
+                android:layout_marginTop="3dp"
+                android:maxLines="2"
+                android:text="Hi, Joe, looks great! :)"
+                android:textColor="@color/colorTextInfo"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@id/tv_user_name"
+                android:text="5:04pm"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/h4" />
+            <LinearLayout
+                android:id="@+id/llMedia"
+                android:layout_below="@id/tv_last_chat"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_media"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_media_video"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_media_name"
+                    android:layout_width="match_parent"
+                    android:text="Video 01:21"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

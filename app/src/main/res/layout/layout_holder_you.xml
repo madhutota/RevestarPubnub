@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/space10"
+    android:layout_marginRight="@dimen/spaceLR">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_chat_text_in"
+            android:layout_toLeftOf="@+id/tv_time_in"
+            android:maxWidth="@dimen/maxwidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space10"
+            android:padding="@dimen/space10"
+            android:text="Hi, joe how are you, do you like to join our party in next week because you don't like party?"
+            android:textColor="@color/txt_out_message"
+            android:textSize="@dimen/h3"
+            android:background="@drawable/bg_chat_you"/>
+            <ImageView
+                android:id="@+id/iv_media_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tv_time_in"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/space5"
+            android:text="5:04pm"
+            android:textColor="@color/txt_out_time"
+            android:textSize="@dimen/h4"
+            android:layout_centerVertical="true"/>
+    </LinearLayout>
+</RelativeLayout>

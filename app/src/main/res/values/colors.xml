@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPurpleLight">#009acd</color>
+    <color name="colorPurpleDark">#009acd</color>
+    <color name="colorAccent">#009acd</color>
+    <color name="colorTextBlack">#333333</color>
+    <color name="colorTextHint">#e1e1e1</color>
+    <color name="colorTextInfo">#000000</color>
+    <color name="navColor">#80FFFFFF</color>
+    <color name="txt_out_time">#666666</color>
+    <color name="txt_in_time">#009acd</color>
+    <color name="txt_out_message">#646464</color>
+    <color name="txt_in_message">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#ff0</color>
+
+</resources>
