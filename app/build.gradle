@@ -36,4 +36,5 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.1.1'
     compile group: 'com.pubnub', name: 'pubnub-gson', version: '4.4.4'
     compile group: 'com.google.guava', name: 'guava', version: '19.0'
+    compile 'com.google.firebase:firebase-messaging:11.0.2'
 }
